@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F3B4D22929AA09C500D0834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D22829AA09C500D0834B /* AppDelegate.swift */; };
 		F3B4D22B29AA09C500D0834B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D22A29AA09C500D0834B /* SceneDelegate.swift */; };
-		F3B4D22D29AA09C500D0834B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D22C29AA09C500D0834B /* ViewController.swift */; };
+		F3B4D22D29AA09C500D0834B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D22C29AA09C500D0834B /* MainViewController.swift */; };
 		F3B4D23029AA09C500D0834B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D22E29AA09C500D0834B /* Main.storyboard */; };
 		F3B4D23229AA09C800D0834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D23129AA09C800D0834B /* Assets.xcassets */; };
 		F3B4D23529AA09C800D0834B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B4D23329AA09C800D0834B /* LaunchScreen.storyboard */; };
+		F3B4D23F29AA0B5D00D0834B /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D23E29AA0B5D00D0834B /* PermissionManager.swift */; };
+		F3B4D24129AA175000D0834B /* SoundAnalysisMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D24029AA175000D0834B /* SoundAnalysisMapper.swift */; };
+		F3B4D24329AA1B7400D0834B /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4D24229AA1B7400D0834B /* ConfettiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3B4D22529AA09C500D0834B /* SpeechDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B4D22829AA09C500D0834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3B4D22A29AA09C500D0834B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3B4D22C29AA09C500D0834B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3B4D22C29AA09C500D0834B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F3B4D22F29AA09C500D0834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3B4D23129AA09C800D0834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3B4D23429AA09C800D0834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3B4D23629AA09C800D0834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B4D23E29AA0B5D00D0834B /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		F3B4D24029AA175000D0834B /* SoundAnalysisMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAnalysisMapper.swift; sourceTree = "<group>"; };
+		F3B4D24229AA1B7400D0834B /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,32 @@
 			children = (
 				F3B4D22829AA09C500D0834B /* AppDelegate.swift */,
 				F3B4D22A29AA09C500D0834B /* SceneDelegate.swift */,
-				F3B4D22C29AA09C500D0834B /* ViewController.swift */,
+				F3B4D23D29AA0B4E00D0834B /* Services */,
+				F3B4D23C29AA0B4400D0834B /* Main */,
 				F3B4D22E29AA09C500D0834B /* Main.storyboard */,
 				F3B4D23129AA09C800D0834B /* Assets.xcassets */,
 				F3B4D23329AA09C800D0834B /* LaunchScreen.storyboard */,
 				F3B4D23629AA09C800D0834B /* Info.plist */,
 			);
 			path = SpeechDemo;
+			sourceTree = "<group>";
+		};
+		F3B4D23C29AA0B4400D0834B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D22C29AA09C500D0834B /* MainViewController.swift */,
+				F3B4D24029AA175000D0834B /* SoundAnalysisMapper.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3B4D23D29AA0B4E00D0834B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3B4D23E29AA0B5D00D0834B /* PermissionManager.swift */,
+				F3B4D24229AA1B7400D0834B /* ConfettiView.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B4D22D29AA09C500D0834B /* ViewController.swift in Sources */,
+				F3B4D24329AA1B7400D0834B /* ConfettiView.swift in Sources */,
+				F3B4D22D29AA09C500D0834B /* MainViewController.swift in Sources */,
 				F3B4D22929AA09C500D0834B /* AppDelegate.swift in Sources */,
+				F3B4D23F29AA0B5D00D0834B /* PermissionManager.swift in Sources */,
 				F3B4D22B29AA09C500D0834B /* SceneDelegate.swift in Sources */,
+				F3B4D24129AA175000D0834B /* SoundAnalysisMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +318,12 @@
 				DEVELOPMENT_TEAM = 8BBYKKS8QL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need acess to microphone to show emojis";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need speech recognition to show emojis";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +347,12 @@
 				DEVELOPMENT_TEAM = 8BBYKKS8QL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need acess to microphone to show emojis";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need speech recognition to show emojis";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
